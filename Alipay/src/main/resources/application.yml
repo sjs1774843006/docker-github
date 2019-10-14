@@ -1,0 +1,15 @@
+spring:
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    cache: false
+  devtools:
+    restart:
+      enabled: true
+      additional-paths: resources/**,static/**,templates/**
+
+server:
+  tomcat:
+    accesslog:
+      enabled: true
+    basedir: target/tomcat
